@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+</head>
+<body>
+<header id="home">
+	<div id="strip">
+		<div id="logo"><img src="images/aslogo.png"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+	  <div class="swiper-slide"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.4000695162226!2d77.01072461455645!3d28.497608696926637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19e255fdd7a5%3A0xe46ca1fedc036de5!2sVijay+Sweet!5e0!3m2!1sen!2sin!4v1558405457534!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+	</div>
+</div>
+<!-- Contact section start -->
+<div class="contact">
+	<div class="bgcolor2">
+		<div class="mltr" id="mltr">
+			<div class="heading" id="h-contact">Contact</div>
+			<div class="contact-L">
+				<p class="p2" id="p6"><b><i class="fa fa-user" aria-hidden="true"></i></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amit Sharma</p>
+				<p class="p2" id="p7"><b><i class="fa fa-envelope" aria-hidden="true"></i></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amitsharma18543@gmail.com</p>
+				<p class="p2" id="p8"><b><i class="fa fa-mobile" aria-hidden="true"></i></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9568443050</p>
+				<p class="p2" id="p9"><b><i class="fa fa-map-marker" aria-hidden="true"></i></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rajendra Park Sector 105 <span>Gurgaon</span></p>
+				<p class="p2" id="p10"><b><i class="fa fa-globe" aria-hidden="true"></i></b> &nbsp;&nbsp;&nbsp;&nbsp;  amitsharma.galaxeepro.com</p>
+
+			</div>
+			<div class="contact-R">
+				<form method="post" id="sub" action="sendMail.php">
+					<div id="msg"></div>
+				 	<div class="input">
+				 		<!-- <label>Fullname</label> -->
+				 		<input type="text" name="name" id="name" placeholder="Enter name">
+				 	</div>
+				 	<div class="input">
+				 		<!-- <label>Email</label> -->
+				 		<input type="email" name="email" id="email" placeholder="Enter email">
+				 	</div>
+				 	<div class="input" id="textarea">.
+				 		<!-- <label>Subject</label> -->
+				 		<input type="text" name="message" id="message" placeholder="Enter Your message">
+				 	</div>
+				 	<button name="send" id="send" type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Contact section End -->
+<footer>
+	<div class="mltr">
+		<p id="p11">&copy; Portfolio. All Rights Reserved | Design by <span>Amit Sharma</span> </p>
+	</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<!-- php mailer start -->
+<script>
+	$(document).ready(function() {
+		$("#send").click(function(){
+			event.preventDefault();
+			if ($("#name").val() == "" || $("#email").val() == "" || $("#message").val() == "") { 
+
+			} else {
+				var ac  = "name=" + $("#name").val() + "&email=" + $("#email").val() + "&message=" + $("#message").val();
+
+				$.ajax({
+					type: "post",
+					url: "sendMail.php",
+					dataType: "text",
+					data: ac,
+					beforeSend: function() {
+						$("#msg").html("");
+						$("#msg").html("Message Sending, Please wait !");
+					},
+					success: function(data){
+						$("#msg").html(data);
+						// alert();
+					},
+				});
+			};
+		});
+	});
+</script>
+<!-- php mailer end -->
+</body>
+</html>

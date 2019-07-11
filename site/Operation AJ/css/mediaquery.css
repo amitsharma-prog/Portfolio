@@ -1,0 +1,36 @@
+@media only screen and (max-width: 320px) {
+	body { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+	header #strip { height: 40px; padding: 0 20px; }
+	header #strip #logo { width: 15%; }
+	header nav ul { display: none; }
+	header nav .bars { display: block; line-height: 45px; }
+	header nav .bars i { line-height: 40px; }
+	.swiper-container { top: -7px; }
+	.swiper-wrapper { height: 109px !important; }
+/*==========================================================================
+ Portfolio
+ *========================================================================*/
+ 	.portfolio { position: relative; top: -15px; height: 1040px; }
+ 	.portfolio-container { padding: 0px; background: none; box-shadow: none;}
+ 	.portfolio-box { width: 90%; left: 13px; }
+ 	.img { height: 229px; }
+ 	#portfolio-box2 { margin: 0; }
+ 	.btn { margin-bottom: 40px; }
+ 	div#img2 img { width: 137%; }
+/*==========================================================================
+ About
+ *========================================================================*/
+ 	.s-a-image { width: 100%; }
+ 	.info-contact { width: 89%; padding: 15px; line-height: 1.5; font-size: medium; }
+ 	.info-contact p { margin: 0; }
+ 	#btn5 { margin-bottom: 0px; }
+ 	.self-about { height: 301vh; }
+ 	.contact { height: 608px; }
+ 	.contact-L { width: 80%; padding: 10px; padding-left: 19px; padding-right: 1px; height: 225px; top: 100px; }
+ 	.contact-R { top: 255px; width: 100%;     padding: 0; }
+ 	input { margin: 10px; padding: 8px;}
+ 	/*.input { width: 94%; }*/
+ 	div#textarea { top: -15px; }
+ 	footer p#p11 { font-size: 13px; line-height: 1.5; padding-top: 13px; }
+ 	footer { margin-top: 40px; }
+}
