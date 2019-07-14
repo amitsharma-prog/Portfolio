@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mediaquery.css">
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/swiper.min.css"> -->
+</head>
+<body>
+  <!-- Preloader --> 
+<div id="preloader">
+  <div class="loader"></div>    
+</div>
+<!--preloader end-->
+<header id="home">
+	<div id="strip" class="strip">
+		<div id="logo"><a href="#home"><img src="images/aslogo.png"></a></div>
+		<nav>
+			<div class="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!-- Swiper -->
+<div class="swiper-container">
+	<!-- <h1 style="position: absolute;top: 10px; left: 40px;">Web Designer and Developer</h1> -->
+	<div class="swiper-wrapper">
+	 <!--  <div class="swiper-slide"><img src="images/slide3.png" alt="slide3.png" style="width: 100%;"></div>
+	  <div class="swiper-slide"><img src="images/banner2.jpg" alt="banner2.jpg" style="width: 100%;"></div>
+	  <div class="swiper-slide"><img src="images/webdesign.jpg" alt="webdesign.jpg" style="width: 100%;"></div> -->
+	  <div class="swiper-slide">
+	  	<img src="images/travel1.jpg" alt="travel1.jpg" style="width: 100%;">
+	  	<div class="black">
+	  		<div class="h-cont">
+	  			<h1>Hello</h1>
+	  			<h2>I am a Web Designer and Developer</h2>
+	  				<a href="#contact">Hire Me</a> <br>
+	  		</div>
+	  		<div id="drop-down" class="drop-down-gif" style="width: 65px;height: 65px;position: relative;left: 47.4%;overflow: hidden;"><a href="#contact"><img src="http://www.thechairmanlive.com/images/scrolldown.gif?crc=4033002793" style="width: 100%;position: absolute;top: 0;left: 0;"></a></div>
+	  	</div>
+	  </div>
+	<!--   <div class="swiper-slide"><img src="images/nature.jpg" alt="nature.jpg" style="width: 100%;"></div> -->
+	</div>
+<!-- Add Pagination -->
+	<div class="swiper-pagination"></div>
+</div>
+<!-- About section start -->
+<div class="self-about" id="about">
+	<div class="mltr">
+	 	<div class="m-container">
+	 		<div class="heading" id="s-a-heading">About Me</div>
+	 		<div class="s-a-image"><div class="a-image"><img src="images/profile.jpg"></div></div>
+ 			
+ 			<div class="info-contact">
+ 				<p>Hi ! My name is Amit sharma from Uttar Pradesh.I am a Professional <strong>Frontend Backend Developer</strong>. I am 19 year old, I have completed my schooling from R.P Inter College Uttar Pradesh. I have completed my graphic web design and development course from arena animation 2017-19. My hobbies play cricket, badminton, watch movie, and listening music. My strength hard working, honesty, patience  </p>
+ 				<button class="btn" id="btn5">Download Resume</button>
+ 			</div>
+	 	</div>
+	</div>
+</div>
+<!-- About section End -->
+<!-- skills section start -->
+<section id="skills">
+	<div class="mltr">
+		<div class="skillsHeading"><h1>My Skills</h1></div>
+		<div class="skillsDetails">
+			<h2>My Skills</h2>
+			<p>Hi visitor,</p>
+			<p>I have knowledge about frontend design tool and also know about graphic design.
+				You can see my work related to Illustrator, Photoshop, coralDraw, and Website Design Tools.
+				Please visite portfolio section to see my work and website live.
+			</p>
+		</div>
+		<div class="Bar">
+			<ul class="skills">
+	            <li><span class="bar-expand photoshop wow fadeInLeft"data-aos="fade-right" ></span><em>Photoshop</em></li>
+	            <li><span class="bar-expand illustrator wow fadeInLeft"data-aos="fade-right" ></span><em>Illustrator</em></li>
+	            <li><span class="bar-expand css wow fadeInLeft"data-aos="fade-right" ></span><em>CSS</em></li>
+	            <li><span class="bar-expand html5 wow fadeInLeft"data-aos="fade-right" ></span><em>HTML5</em></li>
+	            <li><span class="bar-expand jquery wow fadeInLeft"data-aos="fade-right" ></span><em>jQuery</em></li>
+	          </ul>
+		</div>
+	</div>
+</section>
+<!-- skills section end -->
+<!-- Portfolio Start -->
+<!-- MAIN (Center website) -->
+<div class="main" style="clear: both;" id="portfolio">
+<h2>PORTFOLIO</h2>
+
+	<div id="myBtnContainer">
+	  <button class="btn active" onclick="filterSelection('all')" style="transition: 1s;"> Show all</button>
+	  <button class="btn" onclick="filterSelection('web')" style="transition: 1s;"> Web Design</button>
+	  <button class="btn" onclick="filterSelection('graphic')" style="transition: 1s;"> Graphics</button>
+	  <button class="btn" onclick="filterSelection('developer')" style="transition: 1s;"> Web Developer</button>
+	</div>
+
+	<!-- Portfolio Gallery Grid -->
+	<div class="row">
+	  <div class="column graphic" style="transition: all .5s;">
+	    <div class="content">
+	      <a href="images/a3.jpg" data-lightbox="mygallery" data-title="Illustrator"><img src="images/a3.jpg" alt="a1.png" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column graphic">
+	    <div class="content">
+	    <a href="images/a4.jpg" data-lightbox="mygallery" data-title="Illustrator"><img src="images/a4.jpg" alt="a2.png" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column developer">
+	    <div class="content">
+	   	<a href="images/a5.jpg" data-lightbox="mygallery" data-title="CorelDraw"> <img src="images/a5.jpg" alt="a3.png" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column graphic" style="clear: both;">
+	    <div class="content">
+	    <a href="images/a6.jpg" data-lightbox="mygallery" data-title="Illustrator"><img src="images/a6.jpg" alt="p3.jpg" style="width:100%"></a>
+	    </div>
+	  </div>
+	    <div class="column developer">
+	    <div class="content">
+	      <a href="images/a7.jpg" data-lightbox="mygallery" data-title="Photoshop"><img src="images/a7.jpg" alt="a1.png" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column graphic">
+	    <div class="content">
+	    <a href="images/a8.jpg" data-lightbox="mygallery" data-title="Illustrator"><img src="images/a8.jpg" alt="a2.png" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column web">
+	    <div class="content">
+	    <a href="images/a9.jpg" data-lightbox="mygallery" data-title="coralDraw"><img src="images/a9.jpg" alt="a3.png" style="width:100%"></a>
+	    </div>
+	  </div>
+	  <div class="column graphic">
+	    <div class="content">
+	    <a href="images/a10.jpg" data-lightbox="mygallery" data-title="Illustrator"><img src="images/a10.jpg" alt="p3.jpg" style="width:100%"></a>
+	    </div>
+	  </div>
+	<!-- END GRID -->
+	</div>
+</div>
+
+<!-- END MAIN -->
+<!-- Portfolio End -->
+<!-- Contact section start -->
+<div class="contact" id="contact">
+	<div class="bgcolor2">
+		<div class="mltr" id="mltr">
+			<div class="heading" id="h-contact">Get In Touch Me</div>
+			<div class="contact-L">
+				<p class="p2" id="p6"><b><i class="fa fa-user" aria-hidden="true"></i></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amit Sharma</p>
+				<p class="p2" id="p7"><b><i class="fa fa-envelope" aria-hidden="true"></i></b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amitsharma18543@gmail.com</p>
+				<p class="p2" id="p8"><b><i class="fa fa-mobile" aria-hidden="true"></i></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9568443050</p>
+				<p class="p2" id="p9"><b><i class="fa fa-map-marker" aria-hidden="true"></i></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rajendra Park Sector 105 <span>Gurgaon</span></p>
+				<p class="p2" id="p10"><b><i class="fa fa-globe" aria-hidden="true"></i></b> &nbsp;&nbsp;&nbsp;&nbsp;  <a href="https://amitsharma.galaxeepro.com" style="text-decoration: none; color: black;">amitsharma.galaxeepro.com</a></p>
+
+			</div>
+			<div class="contact-R">
+				<form method="post" id="sub" action="sendMail.php">
+				 	<div class="input">
+				 		<!-- <label>Fullname</label> -->
+				 		<input type="text" name="name" id="name" placeholder="Enter name">
+				 	</div>
+				 	<div class="input">
+				 		<!-- <label>Email</label> -->
+				 		<input type="email" name="email" id="email" placeholder="Enter email">
+				 	</div>
+				 	<div class="input" id="textarea">.
+				 		<!-- <label>Subject</label> -->
+				 		<input type="text" name="message" id="message" placeholder="Enter Your message">
+				 	</div>
+				 	<div id="msg"></div>
+				 	<button name="send" id="send" type="submit">Send</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Contact section End -->
+
+
+<!-- Footer section Strat -->
+<footer>
+	<div class="mltr">
+		<p id="p11">&copy; Portfolio. All Rights Reserved | Design by <span>Amit Sharma</span> </p>
+	</div>
+</footer>
+<!-- Footer section End -->
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/aos.js"></script>
+<!-- <script src="js/swiper.min.js"></script> -->
+
+<!-- php mailer start -->
+<script>
+	$(document).ready(function() {
+		$("#send").click(function(){
+			event.preventDefault();
+			if ($("#name").val() == "" || $("#email").val() == "" || $("#message").val() == "") { 
+
+			} else {
+				var ac  = "name=" + $("#name").val() + "&email=" + $("#email").val() + "&message=" + $("#message").val();
+
+				$.ajax({
+					type: "post",
+					url: "sendMail.php",
+					dataType: "text",
+					data: ac,
+					beforeSend: function() {
+						$("#msg").html("");
+						$("#msg").html("Message Sending, Please wait !");
+					},
+					success: function(data){
+						$("#msg").html(data);
+						// alert();
+					},
+				});
+			};
+		});
+	});
+</script>
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<script>
+  AOS.init({
+  	offset: 50,
+  	duration: 1000,
+  });
+</script>
+<script>
+	$(window).scroll(function() {
+    // alert($(window).scrollTop());
+    // alert($(".strip").offset().top);
+  if ($(window).scrollTop() >= 100) {
+    $(".strip").addClass("fix-nav");
+  } else {
+    $(".strip").removeClass("fix-nav");
+  }
+});
+</script>
+</body>
+</html>
